@@ -10,6 +10,8 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.design.widget.NavigationView;
@@ -29,6 +31,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -45,6 +48,7 @@ public class MainActivity extends AppCompatActivity
 
     private Button btStartService;
     private TextView tvText;
+    MediaPlayer mediaPlayer;
 
     private ShareActionProvider mShareActionProvider;
     @Override
@@ -54,11 +58,34 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        mediaPlayer = MediaPlayer.create(this, R.raw.girlshout);
+
+        final ImageButton panicButton = findViewById(R.id.panicButton);
+
+        panicButton.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+
+                playsound();
+
+                return true;
+            }
+        });
+
+        panicButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                String phoneNo = "8851735067";
+                String message = "https://www.google.com/maps/@28.7298838,76.7325634,11z";
+                smsSendMessage(panicButton);
+
+            }
+        });
 
 
-
-        btStartService = (Button) findViewById(R.id.btStartService);
-        tvText = (TextView) findViewById(R.id.tvText);
+//        btStartService = (Button) findViewById(R.id.btStartService);
+//        tvText = (TextView) findViewById(R.id.tvText);
         enableAutoStart();
 
 
@@ -96,6 +123,40 @@ public class MainActivity extends AppCompatActivity
 
 
     }
+
+
+    private void playsound() {
+
+        mediaPlayer.start();
+    }
+
+    public void smsSendMessage(View view) {
+
+        String smsNumber = String.format("smsto: %s",
+                "8860134724");
+
+
+//        String smsNumber = String.format("smsto: %s",
+//                );
+
+
+
+        String sms = "I am in trouble . Please help me out! My current location is :- \n\n https://www.google.com/maps/@28.7298838,76.7325634,11z";
+        // Create the intent.
+        Intent smsIntent = new Intent(Intent.ACTION_SENDTO);
+        // Set the data for the intent as the phone number.
+        smsIntent.setData(Uri.parse(smsNumber));
+        // Add the message (sms) with the key ("sms_body").
+        smsIntent.putExtra("sms_body", sms);
+        // If package resolves (target app installed), send intent.
+        if (smsIntent.resolveActivity(getPackageManager()) != null) {
+            startActivity(smsIntent);
+        } else {
+//           Log.d(TAG, "Can't resolve app for ACTION_SENDTO Intent");
+        }
+    }
+
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -325,7 +386,7 @@ public class MainActivity extends AppCompatActivity
         //replacing the fragment
         if (fragment != null) {
             FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-            ft.replace(R.id.content_frame,fragment);
+//            ft.replace(R.id.content_frame,fragment);
             ft.commit();
         }
 
