@@ -14,6 +14,7 @@ import java.util.ArrayList;
 
 public class DataHolder extends Fragment {
     private RecyclerView mRecyclerView;
+    public static String onClicked;
 
     private ArrayList<Model> mDatas;
     private static final String ARG_TITLE = "title";

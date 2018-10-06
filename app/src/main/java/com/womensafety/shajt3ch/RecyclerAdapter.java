@@ -11,7 +11,7 @@ import java.util.List;
 
 
 
-public class RecyclerAdapter extends RecyclerView.Adapter<Holder> {
+public class RecyclerAdapter extends RecyclerView.Adapter<Holder> implements View.OnClickListener {
 private Context mContext;
 private List<Model> mDatas;
 
@@ -36,4 +36,9 @@ public void onBindViewHolder(Holder holder, int position) {
 public int getItemCount() {
         return mDatas.size();
         }
+
+        @Override
+        public void onClick(View v) {
+
         }
+}
