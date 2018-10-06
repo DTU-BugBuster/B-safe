@@ -16,4 +16,7 @@
     <string name="allow">ALLOW</string>
     <string name="enable_autostart">Enable AutoStart</string>
     <string name="my_service_name">com.sac.speechdemo.MyService</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
 </resources>
