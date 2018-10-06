@@ -55,11 +55,6 @@
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps" />
 
-        <service
-            android:name="com.womensafety.shajt3ch.MyService"
-            >
-        </service>
-
     </application>
 
 </manifest>

@@ -68,18 +68,6 @@ public class MainActivity extends AppCompatActivity
         }
 
 
-        btStartService.setOnClickListener(v -> {
-            if (btStartService.getText().toString().equalsIgnoreCase(getString(R.string.start_service))) {
-                startService(new Intent(MainActivity.this, MyService.class));
-                btStartService.setText(getString(R.string.stop_service));
-                tvText.setVisibility(View.VISIBLE);
-            } else {
-                stopService(new Intent(MainActivity.this, MyService.class));
-                btStartService.setText(getString(R.string.start_service));
-                tvText.setVisibility(View.GONE);
-            }
-        });
-
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -128,8 +116,6 @@ public class MainActivity extends AppCompatActivity
                     Log.d("Number is:", Register.getNumber(db2));
 
                     bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#78C257")));
-                    startService(new Intent(MainActivity.this, MyService.class));
-
                     item.setTitle("STOP SERVICE");
 
                     return true;
@@ -138,15 +124,11 @@ public class MainActivity extends AppCompatActivity
                 else
                 {
                     bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#E81123")));
-                    startService(new Intent(MainActivity.this, MyService.class));
                     item.setTitle("START SERVICE");
                     return true;
                 }
 
 /*
-                    bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#439EB8")));
-                    stopService(new Intent(MainActivity.this, MyService.class));
-                    return true;
 */
             default:
                 // If we got here, the user's action was not recognized.
