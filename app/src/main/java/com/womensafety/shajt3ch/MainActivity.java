@@ -368,18 +368,12 @@ public class MainActivity extends AppCompatActivity
                 Intent i = new Intent(MainActivity.this,MapsActivity.class);
                 startActivity(i);
                 break;
-            case R.id.nav_rate:
-                final RatingDialog ratingDialog = new RatingDialog.Builder(this)
-                        .threshold(3)
-                        .onRatingBarFormSumbit(new RatingDialog.Builder.RatingDialogFormListener() {
-                            @Override
-                            public void onFormSubmitted(String feedback) {
+            case R.id.nav_issafe:
+                Intent in = new Intent(MainActivity.this, IsSafe.class);
+                startActivity(in);
+                 break;
 
-                            }
-                        }).build();
 
-                ratingDialog.show();
-                break;
             case R.id.nav_safety:
                 Intent intent = new Intent(MainActivity.this,Safety.class);
                 startActivity(intent);

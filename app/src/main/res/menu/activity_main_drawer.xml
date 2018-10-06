@@ -25,22 +25,16 @@
             android:icon="@drawable/icon_nearby"
             android:title="Nearby Places" />
         <item
+            android:id="@+id/nav_issafe"
+            android:title="Is Place Safe"
+            android:icon="@drawable/correct_symbol"
+            />
+        <item
             android:id="@+id/nav_safety"
             android:icon="@drawable/icon_safety"
             android:title="Safety Tips" />
+
     </group>
 
-    <item android:title="Communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_rate"
-                android:icon="@drawable/rate"
-                android:title="Rate This App" />
-            <!--<item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />-->
-        </menu>
-    </item>
 
 </menu>

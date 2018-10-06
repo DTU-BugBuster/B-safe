@@ -51,8 +51,12 @@
         <activity
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps" />
+
         <activity android:name=".MainActivity"/>
         <activity android:name=".FirstAidTip" />
+
+        <activity android:name=".IsSafe"></activity>
+
     </application>
 
 </manifest>
