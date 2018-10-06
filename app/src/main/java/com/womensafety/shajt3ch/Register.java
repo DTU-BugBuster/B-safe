@@ -34,6 +34,7 @@ public class Register extends Fragment implements View.OnClickListener {
         View view = inflater.inflate(R.layout.contacts_register, container, false);
         namelayout = view.findViewById(R.id.name);
         numberlayout = view.findViewById(R.id.mobile);
+//        MainActivity.panicButton.setVisibility(View.GONE);
         name = view.findViewById(R.id.editText2);
         number = view.findViewById(R.id.editText3);
         Button save = view.findViewById(R.id.save);

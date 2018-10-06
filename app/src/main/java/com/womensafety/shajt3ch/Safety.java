@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
 import java.util.ArrayList;
 
@@ -21,8 +22,10 @@ public class Safety extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_safety);
+//        MainActivity.panicButton.setVisibility(View.GONE);
         initFragments();
         initViewPager();
+
         mImageArray = new int[]{
                 R.mipmap.firstaid_icon,
                 R.mipmap.selfdefence_icon,

@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity
     private TextView tvText;
     MediaPlayer mediaPlayer;
 
+
     private ShareActionProvider mShareActionProvider;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,28 +62,28 @@ public class MainActivity extends AppCompatActivity
 
         mediaPlayer = MediaPlayer.create(this, R.raw.girlshout);
 
-        final ImageButton panicButton = findViewById(R.id.panicButton);
-
-        panicButton.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View v) {
-
-                playsound();
-
-                return true;
-            }
-        });
-
-        panicButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                String phoneNo = "8851735067";
-                String message = "https://www.google.com/maps/@28.7298838,76.7325634,11z";
-                smsSendMessage(panicButton);
-
-            }
-        });
+//         final ImageButton     panicButton = findViewById(R.id.panicButton);
+//
+//        panicButton.setOnLongClickListener(new View.OnLongClickListener() {
+//            @Override
+//            public boolean onLongClick(View v) {
+//
+//                playsound();
+//
+//                return true;
+//            }
+//        });
+//
+//        panicButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                String phoneNo = "8851735067";
+//                String message = "https://www.google.com/maps/@28.7298838,76.7325634,11z";
+//                smsSendMessage(panicButton);
+//
+//            }
+//        });
 
 
 
@@ -351,7 +352,8 @@ public class MainActivity extends AppCompatActivity
 
                // Showing Alert Message
                alertDialog.show();
-           }break;
+           }
+           break;
 
             case R.id.nav_verify:
                 fragment = new Verify();
@@ -387,7 +389,7 @@ public class MainActivity extends AppCompatActivity
         //replacing the fragment
         if (fragment != null) {
             FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-//            ft.replace(R.id.content_frame,fragment);
+            ft.replace(R.id.content_frame,fragment);
             ft.commit();
         }
 
