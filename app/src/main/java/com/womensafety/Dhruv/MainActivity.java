@@ -31,7 +31,7 @@ import android.widget.TextView;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.afollestad.materialdialogs.Theme;
-import com.womensafety.shajt3ch.R;
+import com.womensafety.Dhruv.R;
 
 
 public class MainActivity extends AppCompatActivity

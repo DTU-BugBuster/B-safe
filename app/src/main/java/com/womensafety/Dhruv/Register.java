@@ -14,7 +14,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.womensafety.shajt3ch.R;
+import com.womensafety.Dhruv.R;
 
 import static android.content.Context.MODE_PRIVATE;
 

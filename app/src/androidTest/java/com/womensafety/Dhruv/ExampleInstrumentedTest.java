@@ -1,4 +1,4 @@
-package com.womensafety.shajt3ch;
+package com.womensafety.Dhruv;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
