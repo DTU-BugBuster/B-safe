@@ -3,7 +3,7 @@ package com.womensafety.Dhruv;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.womensafety.shajt3ch.R;
+import com.womensafety.Dhruv.R;
 
 public class FirstAidTip extends AppCompatActivity {
 

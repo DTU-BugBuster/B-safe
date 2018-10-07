@@ -5,7 +5,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 
-import com.womensafety.shajt3ch.R;
+import com.womensafety.Dhruv.R;
 
 
 class Holder extends RecyclerView.ViewHolder {

@@ -13,7 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.womensafety.shajt3ch.R;
+import com.womensafety.Dhruv.R;
 
 
 public class Verify extends Fragment implements View.OnClickListener {

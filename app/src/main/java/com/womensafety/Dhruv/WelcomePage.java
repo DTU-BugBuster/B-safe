@@ -19,7 +19,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.womensafety.Dhruv.Models.PrefManager;
-import com.womensafety.shajt3ch.R;
+import com.womensafety.Dhruv.R;
 
 public class WelcomePage extends AppCompatActivity {
 

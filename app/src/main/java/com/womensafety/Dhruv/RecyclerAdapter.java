@@ -6,7 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.womensafety.shajt3ch.R;
+import com.womensafety.Dhruv.R;
 
 import java.util.List;
 

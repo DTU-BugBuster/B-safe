@@ -9,7 +9,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-import com.womensafety.shajt3ch.R;
+import com.womensafety.Dhruv.R;
 import com.womensafety.Dhruv.Services.MessageService;
 
 import java.util.ArrayList;
