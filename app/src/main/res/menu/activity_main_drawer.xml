@@ -8,18 +8,7 @@
             android:id="@+id/nav_inst"
             android:icon="@drawable/icon_inst"
             android:title="Instructions" />
-        <item
-            android:id="@+id/nav_verify"
-            android:icon="@drawable/icon_register"
-            android:title="Register Myself" />
-        <item
-            android:id="@+id/nav_register"
-            android:icon="@drawable/icon_contatcs"
-            android:title="Register My Contacts" />
-        <item
-            android:id="@+id/nav_display"
-            android:icon="@drawable/icon_display"
-            android:title="Display Contacts" />
+
         <item
             android:id="@+id/nav_nearby"
             android:icon="@drawable/icon_nearby"

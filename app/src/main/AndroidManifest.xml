@@ -23,7 +23,7 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name=".WelcomePage"
+            android:name="com.womensafety.Dhruv.WelcomePage"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -33,7 +33,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Safety"
+            android:name="com.womensafety.Dhruv.Safety"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <!--
@@ -49,13 +49,13 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".MapsActivity"
+            android:name="com.womensafety.Dhruv.MapsActivity"
             android:label="@string/title_activity_maps" />
 
-        <activity android:name=".MainActivity"/>
-        <activity android:name=".FirstAidTip" />
+        <activity android:name="com.womensafety.Dhruv.MainActivity"/>
+        <activity android:name="com.womensafety.Dhruv.FirstAidTip" />
 
-        <activity android:name=".IsSafe"></activity>
+        <activity android:name="com.womensafety.Dhruv.IsSafe"></activity>
 
     </application>
 
