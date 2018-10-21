@@ -24,8 +24,8 @@ This is an Android App for Women or any Female, which Will Call to an Emergency 
 
 <img src="https://github.com/shivamkumard107/B-safe/blob/master/app/src/main/res/drawable/is_place_safe.jpg" width="400" height="800"/>
 
-5. The Emergency Button: The emergency button works when someone can't call or talk to guardians or others for help.
-           i) one tap on the red button will send your current location to your emergency contacts.
+5. The Emergency Button: The emergency button works when someone can't call or talk to guardians or others for help. <br>
+           i) one tap on the red button will send your current location to your emergency contacts. <br>
            ii) long press on the red button will autoplpay a shouting voice(very high pitch and shrill) of a girl in the phone itself. This                voice will continue to play unless and untill the phone is not switched off or broken.
 
 <img src="https://github.com/shivamkumard107/B-safe/blob/addingImageInReadme/app/src/main/res/drawable/emergency_button.jpg" width="400" height="800"/>
