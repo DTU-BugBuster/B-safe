@@ -4,7 +4,6 @@ This is an Android App for Women or any Female, which Will Call to an Emergency 
 *Make Sure that "Google" App is Installed on your phone and you give this App proper Access Permission like Call, SMS, Microphone.
 
 1. Registration - 
-
 ![1 reg](https://user-images.githubusercontent.com/15268903/44601093-3d313680-a7fd-11e8-9e94-ba3b77d0dfc3.gif)
 
 2. Background Voice recognation service and Help mode execution with Auto call and SMS - 
@@ -20,6 +19,5 @@ This is an Android App for Women or any Female, which Will Call to an Emergency 
 
 ![4 safetytips](https://user-images.githubusercontent.com/15268903/44601775-65219980-a7ff-11e8-93c2-547ecff322ee.gif)
 
-
-
-
+5. Get to know the Degree of safety(rating from 1 to 10) of the place around you. 
+![5_safetytips](B-safe/app/src/main/res/drawable/is_place_safe.jpg)
