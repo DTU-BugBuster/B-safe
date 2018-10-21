@@ -22,3 +22,4 @@ This is an Android App for Women or any Female, which Will Call to an Emergency 
 
 5. Get to know the Degree of safety(rating from 1 to 10) of the place around you.
 ![5_isplacesafe](https://github.com/shivamkumard107/B-safe/blob/master/app/src/main/res/drawable/is_place_safe.jpg width=10)
+<img src="https://github.com/shivamkumard107/B-safe/blob/master/app/src/main/res/drawable/is_place_safe.jpg" width="10" height="30"/>
