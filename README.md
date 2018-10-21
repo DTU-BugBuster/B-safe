@@ -1,4 +1,4 @@
-# Women_Safety_Box
+# B-safe
 This is an Android App for Women or any Female, which Will Call to an Emergency number, based on a specific voice command like "Help" . It will also send SMS with current GPS coordinates to those numbers.
 
 *Make Sure that "Google" App is Installed on your phone and you give this App proper Access Permission like Call, SMS, Microphone.
