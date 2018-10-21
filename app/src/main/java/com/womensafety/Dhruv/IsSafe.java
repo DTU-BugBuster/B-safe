@@ -5,6 +5,8 @@ import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -22,6 +24,7 @@ public class IsSafe extends AppCompatActivity {
     int open=1;
     ArrayList<String> a =new ArrayList<>();
     HashMap<String ,Integer> places=new HashMap<String , Integer>();
+    ImageView pic ;
     double sum=0;
     int count_open=0,count_close=0;
     @Override
@@ -29,10 +32,10 @@ public class IsSafe extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_is_safe);
 
-        Toast.makeText(this, "latitude "+ MessageService.latitude+" "+"longitude "+MessageService.longitude, Toast.LENGTH_SHORT).show();
         score= (TextView) findViewById(R.id.score);
         title= (TextView) findViewById(R.id.title);
         safe= (TextView) findViewById(R.id.safe);
+        pic = findViewById(R.id.pic);
         places.put("hospital",8);
         places.put("airport",9);
         places.put("church",8);
@@ -84,19 +87,23 @@ public class IsSafe extends AppCompatActivity {
                 Toast.makeText(IsSafe.this, String.valueOf(sum), Toast.LENGTH_LONG).show();
                 title.setText("THE SCORE IS");
                 score.setText(String.valueOf(sum));
-                Toast.makeText(IsSafe.this, String.valueOf(count_open) + "OPEN", Toast.LENGTH_LONG).show();
-
                 if(sum>7)
                 {
-                    safe.setText("Yor are Pretty Safe With Score Greater Than 7");
+                    safe.setText("You are Pretty Safe With Score Greater Than 7");
+                    pic.setImageResource(R.drawable.ic_checked);
+                    pic.setVisibility(View.VISIBLE);
                 }
                 else if(sum<7 && sum >6)
                 {
                     safe.setText("You are in range of 6-7, Keep your phone handy");
+                    pic.setImageResource(R.drawable.ic_warning);
+                    pic.setVisibility(View.VISIBLE);
                 }
                 else
                 {
                     safe.setText("Below average , Be safe and Be Atentive");
+                    pic.setImageResource(R.drawable.danger);
+                    pic.setVisibility(View.VISIBLE);
                 }
             }
 
